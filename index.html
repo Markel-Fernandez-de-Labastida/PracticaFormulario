@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <main>
         <article>
-            <form action="" method="post" enctype="application/x-www-form-urlencoded" target="_blank" name="registro_en_el_club" accept-charset="UTF-8">
+            <form action="./index.html" 
+            method="post" 
+            enctype="multipart/form-data" 
+            target="_blank" 
+            autocomplete="on" 
+            novalidate 
+            name="formularioDeRegistro" 
+            accept-charset="UTF-8"
+            rel="noopener noreferrer">
+            
                 <fieldset>
                     <legend>Registro en el club</legend>
                     <h1>Registro en el club</h1>
@@ -36,7 +46,7 @@
                     <p>Datos de Contacto</p>
 
                     <label for="correo">Correo electronico: </label>
-                    <input type="email" id="correo" name="correo" placeholder="ejemplo@dominio.com">
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@dominio.com" tabindex="1" required>
                     <br>
                     <label for="telefono">Telefono: </label>
                     <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890">
@@ -48,12 +58,20 @@
             </form>
         </article>
         <article>
-            <form action="" method="post" target="_blank" name="registro_del_robo_de_la_bicicleta" accept-charset="UTF-8">
+            <form action="./index.html" 
+            method="post" 
+            enctype="multipart/form-data" 
+            target="_blank" 
+            autocomplete="on" 
+            novalidate 
+            name="formularioDeRegistro" 
+            accept-charset="UTF-8"
+            rel="noopener noreferrer">
                 <fieldset> 
                     <legend>Registro de un robo de bicicleta</legend>       
                     <h1>Registro del robo de la bicicleta</h1>
                     <label for="dia">Dia: </label>
-                    <input type="date" id="dia" name="dia">
+                    <input type="date" id="dia" name="dia" autofocus>
                     <br>
                     <label for="hora">Hora: </label>
                     <input type="time" id="hora" name="hora">
